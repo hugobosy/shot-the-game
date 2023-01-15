@@ -34,3 +34,8 @@ export const Wrapper = styled.div`
 export const Image = styled.img`
   width: 20rem;
 `;
+
+export const IconsGroup = styled.div`
+  display: flex;
+  column-gap: 1rem;
+`;
