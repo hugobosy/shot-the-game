@@ -1,10 +1,15 @@
 import React from "react";
-import { SearchInput } from "./Search.styles";
+import { SearchButton, SearchInput, Wrapper } from "./Search.styles";
+import { SearchIcon } from "../../ui/components/icon/search";
 
 export const Search = () => {
+  const handleSearch = () => {};
   return (
-    <>
-      <SearchInput type="search" />
-    </>
+    <Wrapper>
+      <SearchInput type="search" onSubmit={handleSearch} />
+      <SearchButton onClick={handleSearch}>
+        <SearchIcon />
+      </SearchButton>
+    </Wrapper>
   );
 };
