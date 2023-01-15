@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
+import { Navbar } from "./modules/navbar/Navbar";
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <>
+      <header>
+        <Navbar />
+      </header>
+    </>
   );
 }
 
