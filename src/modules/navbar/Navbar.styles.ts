@@ -2,7 +2,15 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
-  display: flex;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: ${({ theme }) => theme.common.maxWidth};
+    margin: 0 auto;
+  }
 
   &::before {
     content: "";
