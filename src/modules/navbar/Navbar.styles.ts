@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 100px;
     width: 100%;
     max-width: ${({ theme }) => theme.common.maxWidth};
     margin: 0 auto;
