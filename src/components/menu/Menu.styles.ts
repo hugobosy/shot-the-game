@@ -44,3 +44,27 @@ export const ExitMenu = styled.div`
     rotate: -45deg;
   }
 `;
+
+export const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
+
+export const Link = styled.a`
+  display: block;
+  color: ${({ theme }) => theme.color.light};
+  padding: 1rem 3rem;
+  border-radius: 10rem;
+  width: 20rem;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.6px;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.color.hover};
+  }
+`;
