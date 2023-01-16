@@ -15,6 +15,7 @@ export const Wrapper = styled.nav<Partial<MenuTypes>>`
   display: flex;
   width: 30rem;
   height: 100vh;
-  background-color: #000;
+  background-color: ${({ theme }) => theme.color.primary};
+  box-shadow: 0 0 20px -7px rgba(0, 0, 0, 1);
   transition: ${({ theme }) => theme.common.transition};
 `;
