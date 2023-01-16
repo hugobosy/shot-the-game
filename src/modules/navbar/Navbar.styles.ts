@@ -7,10 +7,16 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 100px;
+    column-gap: 2rem;
     width: 100%;
+    padding: 1rem;
     max-width: ${({ theme }) => theme.common.maxWidth};
     margin: 0 auto;
+
+    ${({ theme }) => theme.media.md} {
+      column-gap: 10rem;
+      padding: 0;
+    }
   }
 
   &::before {
@@ -32,7 +38,16 @@ export const Wrapper = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 20rem;
+  width: 10rem;
+  padding: 10px;
+
+  ${({ theme }) => theme.media.md} {
+    width: 15rem;
+  }
+
+  ${({ theme }) => theme.media.lg} {
+    width: 20rem;
+  }
 `;
 
 export const IconsGroup = styled.div`

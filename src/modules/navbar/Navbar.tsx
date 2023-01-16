@@ -3,6 +3,7 @@ import { Wrapper, Image, IconsGroup } from "./Navbar.styles";
 import { Search } from "../../components/search/Search";
 import { Toggler } from "../../ui/components/toggler/Toggler";
 import { BiCartAlt, BiMenu, BiUser } from "react-icons/bi";
+import useMediaQuery from "../../hooks/media-query";
 const logo = require("../../ui/assets/Shooting game.png");
 
 export const Navbar = () => {
@@ -10,6 +11,7 @@ export const Navbar = () => {
   const handleClick = () => {
     setActive(!active);
   };
+  const media = useMediaQuery("(min-width: 768px");
   return (
     <Wrapper>
       <div>
@@ -17,9 +19,9 @@ export const Navbar = () => {
         <Search />
         <IconsGroup>
           <Toggler active={active} handleClick={handleClick} />
-          <BiCartAlt size={30} />
-          <BiMenu size={30} />
-          <BiUser size={30} />
+          <BiCartAlt size={media ? "3rem" : "2rem"} />
+          <BiMenu size={media ? "3rem" : "2rem"} />
+          <BiUser size={media ? "3rem" : "2rem"} />
         </IconsGroup>
       </div>
     </Wrapper>
