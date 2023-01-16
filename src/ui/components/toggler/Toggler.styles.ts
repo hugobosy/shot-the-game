@@ -14,6 +14,7 @@ export const TogglerBtn = styled.button<Partial<TogglerTypes>>`
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  transition: 0.4s;
 
   &::before {
     content: "";
@@ -32,5 +33,6 @@ export const TogglerBtn = styled.button<Partial<TogglerTypes>>`
     border-radius: 50%;
     background-color: ${({ theme }) => theme.color.light};
     translate: 0 -50%;
+    transition: 0.4s;
   }
 `;
