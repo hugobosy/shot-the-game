@@ -52,6 +52,7 @@ export const Image = styled.img`
 `;
 
 export const IconsGroup = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   column-gap: 1rem;
