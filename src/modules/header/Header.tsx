@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <header>
       <Navbar setMenuActive={setMenuActive} />
-      <Menu active={menuActive} />
+      <Menu active={menuActive} setMenuActive={setMenuActive} />
     </header>
   );
 };
