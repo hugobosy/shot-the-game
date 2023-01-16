@@ -1,1 +1,3 @@
-export interface MenuUserTypes {}
+export interface MenuUserTypes {
+  activeMenuUser: boolean;
+}
