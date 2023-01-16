@@ -1,8 +1,14 @@
 import React, { useState } from "react";
-import { Wrapper, Image, IconsGroup } from "./Navbar.styles";
+import {
+  Wrapper,
+  Image,
+  IconsGroup,
+  BiCartAlts,
+  BiMenus,
+  BiUsers,
+} from "./Navbar.styles";
 import { Search } from "../../components/search/Search";
 import { Toggler } from "../../ui/components/toggler/Toggler";
-import { BiCartAlt, BiMenu, BiUser } from "react-icons/bi";
 import useMediaQuery from "../../hooks/media-query";
 const logo = require("../../ui/assets/Shooting game.png");
 
@@ -19,9 +25,9 @@ export const Navbar = () => {
         <Search />
         <IconsGroup>
           <Toggler active={active} handleClick={handleClick} />
-          <BiCartAlt size={media ? "3rem" : "2rem"} />
-          <BiMenu size={media ? "3rem" : "2rem"} />
-          <BiUser size={media ? "3rem" : "2rem"} />
+          <BiCartAlts size={media ? "3rem" : "2rem"} />
+          <BiMenus size={media ? "3rem" : "2rem"} />
+          <BiUsers size={media ? "3rem" : "2rem"} />
         </IconsGroup>
       </div>
     </Wrapper>

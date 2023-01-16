@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BiCartAlt, BiMenu, BiUser } from "react-icons/bi";
 
 export const Wrapper = styled.div`
   position: relative;
@@ -54,4 +55,28 @@ export const IconsGroup = styled.div`
   display: flex;
   align-items: center;
   column-gap: 1rem;
+`;
+
+export const BiCartAlts = styled(BiCartAlt)`
+  cursor: pointer;
+  transition: ${({ theme }) => theme.common.transition};
+  &:hover {
+    fill: ${({ theme }) => theme.color.accent};
+  }
+`;
+
+export const BiMenus = styled(BiMenu)`
+  cursor: pointer;
+  transition: ${({ theme }) => theme.common.transition};
+  &:hover {
+    fill: ${({ theme }) => theme.color.accent};
+  }
+`;
+
+export const BiUsers = styled(BiUser)`
+  cursor: pointer;
+  transition: ${({ theme }) => theme.common.transition};
+  &:hover {
+    fill: ${({ theme }) => theme.color.accent};
+  }
 `;
