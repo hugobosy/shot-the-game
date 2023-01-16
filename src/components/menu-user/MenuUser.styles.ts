@@ -29,10 +29,14 @@ export const Link = styled.a`
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-family: Verdana, sans-serif;
   color: ${({ theme }) => theme.color.dark};
   transition: ${({ theme }) => theme.common.transition};
+
+  ${({ theme }) => theme.media.lg} {
+    font-size: 1.6rem;
+  }
 
   &:hover {
     background-color: #eef;
