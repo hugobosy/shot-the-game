@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   position: relative;
 
-  div {
+  > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,5 +37,6 @@ export const Image = styled.img`
 
 export const IconsGroup = styled.div`
   display: flex;
+  align-items: center;
   column-gap: 1rem;
 `;

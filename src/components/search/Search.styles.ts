@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
+  width: 100%;
 `;
 export const SearchInput = styled.input`
   position: relative;
@@ -18,7 +19,7 @@ export const SearchButton = styled.button`
   position: absolute;
   top: 50%;
   right: 30px;
-  translate: 0 -44%;
+  translate: 0 -50%;
   border: none;
   background-color: transparent;
   cursor: pointer;
