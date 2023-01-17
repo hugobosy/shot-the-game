@@ -19,7 +19,10 @@ export const Hero = () => {
     <Wrapper>
       <Container>
         <Slider {...setting}>
-          <HeroCard image="https://cdn.pixabay.com/photo/2019/12/09/04/04/call-of-duty-4682628_1280.jpg" />
+          <HeroCard
+            image="https://cdn.pixabay.com/photo/2019/12/09/04/04/call-of-duty-4682628_1280.jpg"
+            heading="Kup Teraz!"
+          />
           <HeroCard image="https://cdn.pixabay.com/photo/2017/08/13/17/04/way-2637813_1280.jpg" />
         </Slider>
       </Container>
