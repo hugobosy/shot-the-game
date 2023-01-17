@@ -10,4 +10,5 @@ export const Wrapper = styled.div<Partial<HeroCardTypes>>`
       background: url(${image}) 50%;
       background-size: cover;
     `};
+  border-radius: 3rem;
 `;
