@@ -36,9 +36,8 @@ export const Wrapper = styled.div`
     max-width: ${({ theme }) => theme.common.maxWidth};
     margin: 0 auto;
 
-    ${({ theme }) => theme.media.md} {
+    ${({ theme }) => theme.media.lg} {
       column-gap: 10rem;
-      padding: 0;
     }
   }
 `;
