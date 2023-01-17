@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { BiCartAlt, BiMenu, BiUser } from "react-icons/bi";
 
 export const Wrapper = styled.div`
-  position: relative;
+  position: fixed;
   display: flex;
+  width: 100%;
   justify-content: center;
 
   > div {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,23 +21,23 @@ export const Wrapper = styled.div`
       column-gap: 10rem;
       padding: 0;
     }
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background: linear-gradient(
-        to right,
-        #eff 0%,
-        #ddd 30%,
-        #ccc 50%,
-        #ddd 70%,
-        #eff 100%
-      );
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      #eff 0%,
+      #ddd 30%,
+      #ccc 50%,
+      #ddd 70%,
+      #eff 100%
+    );
   }
 `;
 
