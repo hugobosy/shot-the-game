@@ -18,6 +18,7 @@ export const Wrapper = styled.nav<Partial<MenuTypes>>`
   background-color: ${({ theme }) => theme.color.primary};
   box-shadow: 0 0 20px -7px rgba(0, 0, 0, 1);
   transition: ${({ theme }) => theme.common.transition};
+  z-index: 100;
 `;
 
 export const ExitMenu = styled.div`
